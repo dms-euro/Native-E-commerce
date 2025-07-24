@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEA - Produk</title>
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/DEA_LOGO.png" type="image/png" />
+</head>
+
+<body>
+  <!-- Navbar (Same as index.html) -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bx bx-store-alt-2"></i> DEA E-Comerc
+      </a>
+
+      <!-- Dark Mode Toggle -->
+      <div class="d-flex align-items-center">
+        <button id="darkModeToggle" class="btn btn-sm btn-outline-light me-2">
+          <i class="bx bx-moon" id="darkModeIcon"></i>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"> <a class="nav-link " href="index.html"><i class='bx bx-home'></i> Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="products.html"><i class='bx bx-cart'></i> Produk</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="promo.html"><i class='bx bx-discount'></i> Promo</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Produk Section -->
+  <section class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-5 animate__animated animate__fadeIn">Daftar Produk</h1>
+
+      <!-- Filter Kategori -->
+      <div class="row mb-4">
+        <div class="col-md-6 mx-auto text-center">
+          <button class="btn btn-outline-primary
+           me-2 filter-btn" data-filter="all">Semua</button>
+          <button class="btn btn-outline-primary
+           me-2 filter-btn" data-filter="makanan">Makanan</button>
+          <button class="btn btn-outline-primary
+           me-2 filter-btn" data-filter="minuman">Minuman</button>
+        </div>
+      </div>
+
+      <!-- Daftar Produk -->
+      <div class="row" id="product-list">
+        <!-- Produk akan di-load via JS -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5><i class="bx  bx-store-alt-2"></i> DEA E-comerc </h5>
+          <p>Selamat menikmati Karya kami (DEA)</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Link Cepat</h5>
+          <ul class="list-unstyled">
+            <li><a href="products.html" class="text-white">Produk</a></li>
+            <li><a href="promo.html" class="text-white">Promo</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Sosial Media</h5>
+          <a href="https://www.instagram.com/dms_euro/" class="text-white me-2"><i
+              class="fab fa-instagram fa-lg"></i></a>
+          <a href="https://github.com/dms-euro" class="text-white me-2"><i class="fab fa-github fa-lg"></i></a>
+          <a href="https://wa.me/62882006533693" class="text-white me-2"><i class="fab fa-whatsapp fa-lg"></i></a>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">&copy; 2025 Dimas Euro D.P</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
